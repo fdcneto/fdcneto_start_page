@@ -13,150 +13,132 @@
 </head>
 
 <body>
-    <!-- Animated background -->
     <div class="bg-animation">
         <div class="grid-pattern"></div>
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
         </div>
-    </div>
 
     <div class="principal">
 
-        <!-- Header with logo/title -->
         <header class="header">
             <div class="video-container" onclick="abrirGrok()">
                 <video src="./src/video/Cérebro_Biônico_IA_em_Cores.mp4" autoplay loop muted></video>
             </div>
 
-            <!-- Modal do GROK -->
-<div id="grok-modal" class="grok-modal">
-  <div class="grok-content">
-    <button class="grok-close" onclick="fecharGrok()">×</button>
-    <h2 class="grok-title">🤖 Pesquisar no <span>Grok</span></h2>
+            <div id="grok-modal" class="grok-modal">
+                <div class="grok-content">
+                    <button class="grok-close" onclick="fecharGrok()">×</button>
+                    <h2 class="grok-title">🤖 Pesquisar no <span>Grok</span></h2>
 
-    <form action="https://grok.com/" method="GET" target="_blank" class="grok-search">
-      <span class="grok-icon"></span>
-      <input type="text" name="q" placeholder="Pergunte ao Grok..." required>
-      <button type="submit">BUSCAR</button>
-    </form>
+                    <form action="https://grok.com/" method="GET" target="_blank" class="grok-search">
+                        <span class="grok-icon"></span>
+                        <input type="text" name="q" placeholder="Pergunte ao Grok..." required>
+                        <button type="submit">BUSCAR</button>
+                    </form>
 
-    <p class="grok-hint">💡 O Grok abrirá em uma nova aba</p>
-  </div>
-</div>
-<!-- Modal do GROK -->
+                    <p class="grok-hint">💡 O Grok abrirá em uma nova aba</p>
+                </div>
+            </div>
+            <div id="cursos-modal" class="grok-modal">
+                <div class="grok-content">
+                    <button class="grok-close" onclick="fecharCursos()">×</button>
+                    <h2 class="grok-title">🎓 Cursos</h2>
 
-<!-- Modal dos CURSOS -->
-<div id="cursos-modal" class="grok-modal">
-  <div class="grok-content">
-    <button class="grok-close" onclick="fecharCursos()">×</button>
-    <h2 class="grok-title">🎓 Cursos</h2>
+                    <ul class="cursos-list">
+                        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                        <li><a href="https://www.dio.me/" target="_blank">DiO</a></li>
+                        <li><a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Santander Open Academy</a></li>
+                        <li><a href="https://www.youtube.com/c/cfbcursos/playlists" target="_blank">Canal Fessor Bruno</a></li>
+                        <li><a href="https://www.youtube.com/user/bosontreinamentos/playlists" target="_blank">Bóson Treinamentos</a></li>
+                        <li><a href="https://www.youtube.com/user/univesptv/playlists" target="_blank">Univesp</a></li>
+                        <li><a href="https://www.youtube.com/c/loianegroner/playlists" target="_blank">Loiane Groner</a></li>
+                        <li><a href="https://www.youtube.com/c/Ot%C3%A1vioMiranda/playlists" target="_blank">Otávio Miranda</a></li>
+                        <li><a href="https://www.youtube.com/c/excriptvideo/playlists" target="_blank">eXcript</a></li>
+                        <li><a href="https://www.youtube.com/@CidaCastello" target="_blank">Cida Castello</a></li>
+                        <li><a href="https://williamazaradoprogramas.blogspot.com/" target="_blank">William Azarado</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCm63tB8wsKOVvxoU4iMpS2A" target="_blank">Dev Aprender</a></li>
+                        <li><a href="https://www.mediafire.com/" target="_blank">Mediafire</a></li>
+                        <li><a href="https://en.taiwebs.com/?lang=BR" target="_blank">Taiwebs</a></li>
+                        <li><a href="https://play.google.com/store" target="_blank">Google PlayStore</a></li>
+                    </ul>
 
-    <ul class="cursos-list">
-      <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-      <li><a href="https://www.dio.me/" target="_blank">DiO</a></li>
-      <li><a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Santander Open Academy</a></li>
-      <li><a href="https://www.youtube.com/c/cfbcursos/playlists" target="_blank">Canal Fessor Bruno</a></li>
-      <li><a href="https://www.youtube.com/user/bosontreinamentos/playlists" target="_blank">Bóson Treinamentos</a></li>
-      <li><a href="https://www.youtube.com/user/univesptv/playlists" target="_blank">Univesp</a></li>
-      <li><a href="https://www.youtube.com/c/loianegroner/playlists" target="_blank">Loiane Groner</a></li>
-      <li><a href="https://www.youtube.com/c/Ot%C3%A1vioMiranda/playlists" target="_blank">Otávio Miranda</a></li>
-      <li><a href="https://www.youtube.com/c/excriptvideo/playlists" target="_blank">eXcript</a></li>
-      <li><a href="https://www.youtube.com/@CidaCastello" target="_blank">Cida Castello</a></li>
-      <li><a href="https://williamazaradoprogramas.blogspot.com/" target="_blank">William Azarado</a></li>
-      <li><a href="https://www.youtube.com/channel/UCm63tB8wsKOVvxoU4iMpS2A" target="_blank">Dev Aprender</a></li>
-      <li><a href="https://www.mediafire.com/" target="_blank">Mediafire</a></li>
-      <li><a href="https://en.taiwebs.com/?lang=BR" target="_blank">Taiwebs</a></li>
-      <li><a href="https://play.google.com/store" target="_blank">Google PlayStore</a></li>
-    </ul>
-    
-  </div>
-</div>
-<!-- Modal dos CURSOS -->
+                </div>
+            </div>
+            <script>
+                function abrirGrok() {
+                    document.getElementById("grok-modal").style.display = "flex";
+                }
 
-<!-- Modal do GROK Js-->
-<script>
-function abrirGrok() {
-  document.getElementById("grok-modal").style.display = "flex";
-}
+                function fecharGrok() {
+                    const modal = document.getElementById("grok-modal");
+                    if (modal.style.display === "flex") {
+                        // Aplica animação de fade-out antes de ocultar
+                        modal.style.animation = "fadeOut 0.3s ease forwards";
+                        setTimeout(() => {
+                            modal.style.display = "none";
+                            modal.style.animation = ""; // reseta animação
+                        }, 280); // tempo igual ao fadeOut
+                    }
+                }
 
-function fecharGrok() {
-  const modal = document.getElementById("grok-modal");
-  if (modal.style.display === "flex") {
-    // Aplica animação de fade-out antes de ocultar
-    modal.style.animation = "fadeOut 0.3s ease forwards";
-    setTimeout(() => {
-      modal.style.display = "none";
-      modal.style.animation = ""; // reseta animação
-    }, 280); // tempo igual ao fadeOut
-  }
-}
+                window.onclick = function(event) {
+                    const modal = document.getElementById("grok-modal");
+                    if (event.target === modal) fecharGrok();
+                };
 
-window.onclick = function(event) {
-  const modal = document.getElementById("grok-modal");
-  if (event.target === modal) fecharGrok();
-};
+                // 🧠 Fecha automaticamente ao clicar em "Buscar"
+                document.addEventListener("DOMContentLoaded", () => {
+                    const grokForm = document.querySelector(".grok-search");
+                    if (grokForm) {
+                        grokForm.addEventListener("submit", () => {
+                            fecharGrok();
+                        });
+                    }
+                });
 
-// 🧠 Fecha automaticamente ao clicar em "Buscar"
-document.addEventListener("DOMContentLoaded", () => {
-  const grokForm = document.querySelector(".grok-search");
-  if (grokForm) {
-    grokForm.addEventListener("submit", () => {
-      fecharGrok();
-    });
-  }
-});
+                // ⌨️ Fecha o modal ao pressionar ESC
+                document.addEventListener("keydown", (event) => {
+                    if (event.key === "Escape") {
+                        fecharGrok();
+                    }
+                });
+            </script>
+            <script>
+                // === Funções da modal CURSOS ===
+                function abrirCursos() {
+                    const modal = document.getElementById("cursos-modal");
+                    modal.style.display = "flex";
+                    modal.style.animation = "fadeIn 0.3s ease";
+                }
 
-// ⌨️ Fecha o modal ao pressionar ESC
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    fecharGrok();
-  }
-});
-</script>
-<!-- Modal do GROK Js-->
+                function fecharCursos() {
+                    const modal = document.getElementById("cursos-modal");
+                    if (modal && modal.style.display === "flex") {
+                        modal.style.animation = "fadeOut 0.28s ease forwards";
+                        setTimeout(() => {
+                            modal.style.display = "none";
+                            modal.style.animation = "";
+                        }, 280);
+                    }
+                }
 
-<script>
-  // === Funções da modal CURSOS ===
-  function abrirCursos() {
-    const modal = document.getElementById("cursos-modal");
-    modal.style.display = "flex";
-    modal.style.animation = "fadeIn 0.3s ease";
-  }
+                window.addEventListener('click', (event) => {
+                    const cm = document.getElementById("cursos-modal");
+                    if (cm && event.target === cm) fecharCursos();
+                });
 
-  function fecharCursos() {
-    const modal = document.getElementById("cursos-modal");
-    if (modal && modal.style.display === "flex") {
-      modal.style.animation = "fadeOut 0.28s ease forwards";
-      setTimeout(() => {
-        modal.style.display = "none";
-        modal.style.animation = "";
-      }, 280);
-    }
-  }
+                document.addEventListener("keydown", (event) => {
+                    if (event.key === "Escape") fecharCursos();
+                });
 
-  window.addEventListener('click', (event) => {
-    const cm = document.getElementById("cursos-modal");
-    if (cm && event.target === cm) fecharCursos();
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") fecharCursos();
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const cursosLinks = document.querySelectorAll("#cursos-modal .cursos-list a");
-    cursosLinks.forEach(a => {
-      a.addEventListener("click", () => {
-        setTimeout(fecharCursos, 150);
-      });
-    });
-  });
-</script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const cursosLinks = document.querySelectorAll("#cursos-modal .cursos-list a");
+                    cursosLinks.forEach(a => {
+                        a.addEventListener("click", () => {
+                            setTimeout(fecharCursos, 150);
+                        });
+                    });
+                });
+            </script>
 
             <h6 class="main-title">
                 <span class="title-line">@fdcneto</span>
@@ -164,132 +146,114 @@ document.addEventListener("keydown", (event) => {
             </h6>
         </header>
 
-        <form action="https://www.google.com/search" method="GET" target="_blank" class="google-search">
-            <span class="icon">&#128269;</span> <!-- Ícone de lupa -->
-            <input type="text" name="q" placeholder="Pesquisar no Google..." required>
+        <form id="searchForm" action="https://www.google.com/search" method="GET" target="_blank" class="google-search">
+            <span class="icon">🔍</span> <input type="text" name="q" id="searchInput" list="history-list" placeholder="Pesquisar no Google..." autocomplete="off" required>
+            <datalist id="history-list"></datalist>
             <button type="submit">Buscar</button>
         </form>
 
-        <!-- INICIO - BOTOES DE DESENVOLVIMENTO -->
         <section class="section-dev">
             <h2 class="section-title">Desenvolvimento</h2>
             <div class="button-grid">
-                <button class="neon-button dev-button" data-service="chatgpt"
-                    onclick="window.open('https://chat.openai.com/', '_blank')" title="Ir para ChatGPT">
+                <button class="neon-button dev-button" data-service="chatgpt" onclick="window.open('https://chat.openai.com/', '_blank')" title="Ir para ChatGPT">
                     <span class="button-icon">🤖</span>
                     <span class="button-text">ChatGPT</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="gemini"
-                    onclick="window.open('https://gemini.google.com/app?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all', '_blank')"
-                    title="Ir para Gemini">
+                <button class="neon-button dev-button" data-service="gemini" onclick="window.open('https://gemini.google.com/app?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all', '_blank')" title="Ir para Gemini">
                     <span class="button-icon">🤖</span>
                     <span class="button-text">Gemini</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="google-ai-studio"
-                    onclick="window.open('https://aistudio.google.com/', '_blank')"
-                    title="Ir para Google.Ai.Studio">
+                <button class="neon-button dev-button" data-service="google-ai-studio" onclick="window.open('https://aistudio.google.com/', '_blank')" title="Ir para Google.Ai.Studio">
                     <span class="button-icon">🤖</span>
                     <span class="button-text">Google.Ai.Studio</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="claudeAi"
-                    onclick="window.open('https://claude.ai/new', '_blank')" title="Ir para Claude.Ai">
+                <button class="neon-button dev-button" data-service="claudeAi" onclick="window.open('https://claude.ai/new', '_blank')" title="Ir para Claude.Ai">
                     <span class="button-icon">🧠</span>
                     <span class="button-text">Claude.Ai</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="qwen"
-                    onclick="window.open('https://chat.qwen.ai/', '_blank')" title="Ir para Qwen.Ai">
+                <button class="neon-button dev-button" data-service="qwen" onclick="window.open('https://chat.qwen.ai/', '_blank')" title="Ir para Qwen.Ai">
                     <span class="button-icon">🧠</span>
                     <span class="button-text">Qwen.Ai</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="deepseek"
-                    onclick="window.open('https://chat.deepseek.com/', '_blank')" title="Ir para Deepseek">
+                <button class="neon-button dev-button" data-service="deepseek" onclick="window.open('https://chat.deepseek.com/', '_blank')" title="Ir para Deepseek">
                     <span class="button-icon">🧠</span>
                     <span class="button-text">DeepSeek</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="perplexity"
-                    onclick="window.open('https://www.perplexity.ai/', '_blank')" title="Ir para Perplexity">
+                <button class="neon-button dev-button" data-service="z_ai"
+                    onclick="window.open('https://chat.z.ai/', '_blank')" title="Ir para Z.Ai">
+                    <span class="button-icon">🧠</span>
+                    <span class="button-text">Z.Ai</span>
+                </button>
+                
+                <button class="neon-button dev-button" data-service="perplexity" onclick="window.open('https://www.perplexity.ai/', '_blank')" title="Ir para Perplexity">
                     <span class="button-icon">🧠</span>
                     <span class="button-text">Perplexity.Ai</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="gamma"
-                    onclick="window.open('https://gamma.app/pt-br', '_blank')" title="Ir para Gamma.app">
+                <button class="neon-button dev-button" data-service="gamma" onclick="window.open('https://gamma.app/pt-br', '_blank')" title="Ir para Gamma.app">
                     <span class="button-icon">🧠</span>
                     <span class="button-text">Gamma</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="bolt"
-                    onclick="window.open('https://bolt.new/', '_blank')" title="Ir para Bolt">
+                <button class="neon-button dev-button" data-service="bolt" onclick="window.open('https://bolt.new/', '_blank')" title="Ir para Bolt">
                     <span class="button-icon">⚡</span>
                     <span class="button-text">Bolt</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="github"
-                    onclick="window.open('https://github.com/', '_blank')" title="Ir para GitHub">
+                <button class="neon-button dev-button" data-service="github" onclick="window.open('https://github.com/', '_blank')" title="Ir para GitHub">
                     <span class="button-icon">🐱</span>
                     <span class="button-text">GitHub</span>
-                </button> 
+                </button>
 
-                <button class="neon-button dev-button" data-service="w3schools"
-                    onclick="window.open('https://www.w3schools.com/', '_blank')" title="Ir para W3Schools">
+                <button class="neon-button dev-button" data-service="w3schools" onclick="window.open('https://www.w3schools.com/', '_blank')" title="Ir para W3Schools">
                     <span class="button-icon">📚</span>
                     <span class="button-text">W3Schools</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="mdn"
-                    onclick="window.open('https://developer.mozilla.org/pt-BR/', '_blank')"
-                    title="Ir para MDN Web Docs">
+                <button class="neon-button dev-button" data-service="mdn" onclick="window.open('https://developer.mozilla.org/pt-BR/', '_blank')" title="Ir para MDN Web Docs">
                     <span class="button-icon">📖</span>
                     <span class="button-text">MDN</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="w3c"
-                    onclick="window.open('https://validator.w3.org/', '_blank')" title="Ir para W3C Markup Validation">
+                <button class="neon-button dev-button" data-service="w3c" onclick="window.open('https://validator.w3.org/', '_blank')" title="Ir para W3C Markup Validation">
                     <span class="button-icon">✅</span>
                     <span class="button-text">W3C</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="css-tricks"
-                    onclick="window.open('https://css-tricks.com/', '_blank')" title="Ir para CSS-Tricks">
+                <button class="neon-button dev-button" data-service="css-tricks" onclick="window.open('https://css-tricks.com/', '_blank')" title="Ir para CSS-Tricks">
                     <span class="button-icon">🎨</span>
                     <span class="button-text">CSS-Tricks</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="can-i-use"
-                    onclick="window.open('https://caniuse.com/', '_blank')" title="Ir para Can-I-Use">
+                <button class="neon-button dev-button" data-service="can-i-use" onclick="window.open('https://caniuse.com/', '_blank')" title="Ir para Can-I-Use">
                     <span class="button-icon">🎨</span>
                     <span class="button-text">Can-I-Use</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="colors"
-                    onclick="window.open('https://html-color-codes.info/Codigos-de-Cores-HTML/', '_blank')"
-                    title="Ir para Html Color Codes">
+                <button class="neon-button dev-button" data-service="colors" onclick="window.open('https://html-color-codes.info/Codigos-de-Cores-HTML/', '_blank')" title="Ir para Html Color Codes">
                     <span class="button-icon">🎨</span>
                     <span class="button-text">Colors</span>
                 </button>
 
-                <button class="neon-button dev-button" data-service="Tutoriais_fdcneto"
-                    onclick="window.open('https://fdcneto.github.io/guia_completo_django/', '_blank')" title="Ir para Tutoriais Fdcneto">
+                <button class="neon-button dev-button" data-service="Tutoriais_fdcneto" onclick="window.open('https://fdcneto.github.io/guia_completo_django/', '_blank')" title="Ir para Tutoriais Fdcneto">
                     <span class="button-icon">📚</span>
                     <span class="button-text">Tutoriais Fdcneto</span>
                 </button>
-                               
+
             </div>
         </section>
 
-        <!-- INICIO - BOTOES DE MÍDIA/ENTRETENIMENTO -->
         <section class="section-media">
             <h2 class="section-title">Mídia & Entretenimento</h2>
             <div class="media-grid">
 
-                <a href="https://www.primevideo.com/" target="_blank" class="media-card"
-                    title="Ir para Prime Vídeo">
+                <a href="https://www.primevideo.com/" target="_blank" class="media-card" title="Ir para Prime Vídeo">
                     <div class="card-content">
                         <span class="card-icon">📱</span>
                         <span class="card-title">Prime Vídeo</span>
@@ -303,40 +267,35 @@ document.addEventListener("keydown", (event) => {
                     </div>
                 </a>
 
-                <a href="https://www.youtube.com/" target="_blank" class="media-card"
-                    title="Ir para Youtube">
+                <a href="https://www.youtube.com/" target="_blank" class="media-card" title="Ir para Youtube">
                     <div class="card-content">
                         <span class="card-icon">📹</span>
                         <span class="card-title">Youtube</span>
                     </div>
                 </a>
 
-                <a href="https://www.viki.com/" target="_blank" class="media-card"
-                    title="Ir para Rakuten Viki">
+                <a href="https://www.viki.com/" target="_blank" class="media-card" title="Ir para Rakuten Viki">
                     <div class="card-content">
                         <span class="card-icon">📺</span>
                         <span class="card-title">Rakuten Viki</span>
                     </div>
                 </a>
 
-                <a href="https://www.youtube.com/@youkuportuguese" target="_blank" class="media-card"
-                    title="Ir para Youku">
+                <a href="https://www.youtube.com/@youkuportuguese" target="_blank" class="media-card" title="Ir para Youku">
                     <div class="card-content">
                         <span class="card-icon">📺</span>
                         <span class="card-title">Youku</span>
                     </div>
                 </a>
 
-                <a href="https://www.youtube.com/@WeTVPortuguese" target="_blank" class="media-card"
-                    title="Ir para WeTv">
+                <a href="https://www.youtube.com/@WeTVPortuguese" target="_blank" class="media-card" title="Ir para WeTv">
                     <div class="card-content">
                         <span class="card-icon">📺</span>
                         <span class="card-title">WeTv</span>
                     </div>
                 </a>
 
-                <a href="https://www.formula1.com/pt-br/subscribe-to-f1-tv" target="_blank" class="media-card"
-                    title="Ir para Fórmula 1 TV">
+                <a href="https://www.formula1.com/pt-br/subscribe-to-f1-tv" target="_blank" class="media-card" title="Ir para Fórmula 1 TV">
                     <div class="card-content">
                         <span class="card-icon">🏎️</span>
                         <span class="card-title">F1 TV</span>
@@ -374,20 +333,17 @@ document.addEventListener("keydown", (event) => {
             </div>
         </section>
 
-        <!-- LINKS ÚTEIS -->
         <section class="section-links">
             <h2 class="section-title">Links Úteis</h2>
             <div class="links-container">
                 <div class="link-row">
-                    <a href="https://translate.google.com/?hl=pt-BR" target="_blank" class="cyber-link">Google
-                        Tradutor</a>
+                    <a href="https://translate.google.com/?hl=pt-BR" target="_blank" class="cyber-link">Google Tradutor</a>
                     <a href="https://fontmeme.com/pt/" target="_blank" class="cyber-link">Font Meme</a>
                     <a href="https://www.freepik.com/" target="_blank" class="cyber-link">Freepik</a>
                     <a href="https://www.youtube.com/user/fdcneto" target="_blank" class="cyber-link">FunkMix</a>
                 </div>
                 <div class="link-row">
-                    <a href="https://www.brasilbandalarga.com.br/bbl/" target="_blank" class="cyber-link">EAQ
-                        BandaLarga</a>
+                    <a href="https://www.brasilbandalarga.com.br/bbl/" target="_blank" class="cyber-link">EAQ BandaLarga</a>
                     <a href="https://www.speedtest.net/" target="_blank" class="cyber-link">SpeedTest</a>
                     <a href="https://www.boadica.com.br/pesquisa/precos" target="_blank" class="cyber-link">BoaDica</a>
                     <a href="https://shopee.com.br/" target="_blank" class="cyber-link">Shopee</a>
@@ -401,42 +357,33 @@ document.addEventListener("keydown", (event) => {
             </div>
         </section>
 
-        <!-- SERVIÇOS PRINCIPAIS -->
         <section class="section-services">
             <div class="services-grid">
-                
-
-                <button class="service-button gmail" onclick="window.open('https://mail.google.com/', '_blank')"
-                    title="Ir para GMail">
+                <button class="service-button gmail" onclick="window.open('https://mail.google.com/', '_blank')" title="Ir para GMail">
                     <span class="service-icon">📧</span>
                     <span class="service-name">Gmail</span>
                 </button>
 
-                <button class="service-button facebook" onclick="window.open('https://www.facebook.com/', '_blank')"
-                    title="Ir para Facebook">
+                <button class="service-button facebook" onclick="window.open('https://www.facebook.com/', '_blank')" title="Ir para Facebook">
                     <span class="service-icon">📘</span>
                     <span class="service-name">Facebook</span>
                 </button>
 
-                <button class="service-button maps" onclick="window.open('https://www.google.com.br/maps/', '_blank')"
-                    title="Ir para Google Maps">
+                <button class="service-button maps" onclick="window.open('https://www.google.com.br/maps/', '_blank')" title="Ir para Google Maps">
                     <span class="service-icon">🗺️</span>
                     <span class="service-name">Maps</span>
                 </button>
 
-                <button class="service-button udemy" onclick="window.open('https://www.udemy.com/courses/', '_blank')"
-                    title="Ir para Udemy">
+                <button class="service-button udemy" onclick="window.open('https://www.udemy.com/courses/', '_blank')" title="Ir para Udemy">
                     <span class="service-icon">🎓</span>
                     <span class="service-name">Udemy</span>
                 </button>
 
-                <button class="service-button mercado-livre"
-                    onclick="window.open('https://www.mercadolivre.com.br/', '_blank')" title="Ir para Mercado Livre">
+                <button class="service-button mercado-livre" onclick="window.open('https://www.mercadolivre.com.br/', '_blank')" title="Ir para Mercado Livre">
                     <span class="service-icon">🛍️</span>
                     <span class="service-name">Mercado Livre</span>
                 </button>
 
-                
                 <button class="service-button cursos" onclick="abrirCursos()" title="Ver Cursos">
                     <span class="service-icon">📋</span>
                     <span class="service-name">Cursos</span>
@@ -444,39 +391,31 @@ document.addEventListener("keydown", (event) => {
             </div>
         </section>
 
-        <!-- BANCOS -->
         <section class="section-banking">
             <h2 class="section-title">Banking</h2>
             <div class="banking-grid">
-                <button class="bank-button bradesco"
-                    onclick="window.open('https://banco.bradesco/html/classic/index.shtm', '_blank')"
-                    title="Ir para Bradesco">
+                <button class="bank-button bradesco" onclick="window.open('https://banco.bradesco/html/classic/index.shtm', '_blank')" title="Ir para Bradesco">
                     <span class="bank-icon">🏦</span>
                     <span class="bank-name">Bradesco</span>
                 </button>
 
-                <button class="bank-button caixa"
-                    onclick="window.open('http://www.caixa.gov.br/Paginas/home-caixa.aspx', '_blank')"
-                    title="Ir para Caixa">
+                <button class="bank-button caixa" onclick="window.open('http://www.caixa.gov.br/Paginas/home-caixa.aspx', '_blank')" title="Ir para Caixa">
                     <span class="bank-icon">🏛️</span>
                     <span class="bank-name">Caixa</span>
                 </button>
 
-                <button class="bank-button santander" onclick="window.open('https://www.santander.com.br/', '_blank')"
-                    title="Ir para Santander">
+                <button class="bank-button santander" onclick="window.open('https://www.santander.com.br/', '_blank')" title="Ir para Santander">
                     <span class="bank-icon">🔴</span>
                     <span class="bank-name">Santander</span>
                 </button>
 
-                <button class="bank-button itau" onclick="window.open('https://www.itau.com.br/', '_blank')"
-                    title="Ir para Itaú">
+                <button class="bank-button itau" onclick="window.open('https://www.itau.com.br/', '_blank')" title="Ir para Itaú">
                     <span class="bank-icon">🧡</span>
                     <span class="bank-name">Itaú</span>
                 </button>
             </div>
         </section>
 
-        <!-- ENDEREÇO -->
         <footer class="address">
             <div class="address-content">
                 <span class="address-icon">📍</span>
@@ -486,6 +425,47 @@ document.addEventListener("keydown", (event) => {
         </footer>
 
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchForm = document.getElementById('searchForm');
+            const searchInput = document.getElementById('searchInput');
+            const historyList = document.getElementById('history-list');
+
+            // 1. Carregar histórico do LocalStorage
+            let searchHistory = JSON.parse(localStorage.getItem('fdcSearchHistory')) || [];
+
+            // 2. Função para popular o datalist (lista de sugestões)
+            function updateDatalist() {
+                historyList.innerHTML = '';
+                // Pega os últimos 5 termos
+                searchHistory.slice().reverse().slice(0, 5).forEach(term => {
+                    const option = document.createElement('option');
+                    option.value = term;
+                    historyList.appendChild(option);
+                });
+            }
+
+            // 3. Salvar nova busca quando der Enter
+            if (searchForm) {
+                searchForm.addEventListener('submit', () => {
+                    const term = searchInput.value.trim();
+                    if (term) {
+                        // Remove se já existir (para não duplicar) e adiciona no fim
+                        searchHistory = searchHistory.filter(t => t.toLowerCase() !== term.toLowerCase());
+                        searchHistory.push(term);
+
+                        // Salva no navegador
+                        localStorage.setItem('fdcSearchHistory', JSON.stringify(searchHistory));
+                        updateDatalist();
+                    }
+                });
+            }
+
+            // Inicializa a lista visual
+            updateDatalist();
+        });
+    </script>
 </body>
 
 </html>
